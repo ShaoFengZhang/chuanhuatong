@@ -1,0 +1,38 @@
+<view class="bgContainer">
+
+    <view class="txtContentView" wx:if="{{correct}}">
+
+        <view class="userInfoView comFlex">
+
+            <view class="userIcon">
+                <image src="{{content.photo}}" />
+            </view>
+
+            <view class="userDes">
+                <view class="one-ellipsis">{{content.name}}</view>
+                <view style="color:#999;font-size:32rpx;">想对你说</view>
+            </view>
+        </view>
+
+        <view class="line"></view>
+
+        <view class="sentence">
+            <text>{{content.text}}</text>
+        </view>
+
+    </view>
+
+
+    <view class="errorTxtView comFlex" wx:if="{{!correct}}">
+        <text>哈哈哈哈哈....你被整蛊啦~...我知道你在偷偷关注我了</text>
+    </view>
+
+    <view class="botGenerateBtn" catchtap="navhomeindex">
+        <text>{{botBtnTxt}}</text>
+        <form bindsubmit="formSubmit" report-submit="{{true}}">
+            <button  id="shareBtn" formType="submit"></button>
+        </form>
+
+    </view>
+
+</view>

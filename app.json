@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/qrCode/qrCode",
+        "pages/result/result"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "恋恋传话筒",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

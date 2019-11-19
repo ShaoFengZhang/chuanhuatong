@@ -1,0 +1,19 @@
+<view class="bgContainer">
+
+    <view class="qrCodeView">
+        <image class="{{nowindex==index?'borderimg':null}}" data-id="{{item.id}}" wx:for="{{qrcodeArr}}" wx:key="{{index}}" src="{{item.icon}}" catchtap="generateQrcode1" />
+    </view>
+
+
+
+    <view class="botGenerateBtn" catchtap="drawcanvs">
+        <text>保存</text>
+        <form bindsubmit="formSubmit" report-submit="{{true}}">
+            <button  id="shareBtn" formType="submit"></button>
+        </form>
+
+    </view>
+
+    <canvas canvas-id="canvas" style="width:{{bgimgW}}px;height:{{bgimgH}}px;display:block;position:absolute; bottom:1500px" />
+
+</view>

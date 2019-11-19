@@ -1,0 +1,19 @@
+.bgContainer {
+    background-color: #fff;
+}
+
+.qrCodeView{
+    margin: 26rpx auto 0;
+}
+
+.qrCodeView,.qrCodeView image{
+    width: 702rpx;
+    height: 214rpx;
+    box-sizing: border-box;
+}
+
+.borderimg{
+    
+    border: 2rpx solid #282828;
+}
+
